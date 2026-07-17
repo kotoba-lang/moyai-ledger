@@ -26,7 +26,7 @@
   (is (false? (ledger/grants-governance-weight?)))
   (is (false? (ledger/grants-benefit-or-stage?)))
   (doseq [forbidden '[transfer gift merge pool]]
-    (is (nil? (ns-resolve 'moyai.ledger forbidden)))))
+    (is (not (contains? (ns-publics 'moyai.ledger) forbidden)))))
 
 (deftest append-only-and-overdraw-gates
   (testing "epochs are monotone"
