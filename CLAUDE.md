@@ -1,5 +1,8 @@
 # Moyai ledger shared-library rules
 
+Canonical repository: `kotoba-lang/moyai-ledger`.
+Historical alias: `etzhayyim/com-etzhayyim-moyai-ledger`.
+
 - `library.edn` is canonical repository metadata.
 - Preserve append-only monotone epochs, non-monetary credit, non-transferability, decay,
   conservation, and the governance/benefit firewalls.
