@@ -1,5 +1,5 @@
 (ns moyai.ledger-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [moyai.ledger :as ledger]))
 
 (def holder-a "did:example:a")
